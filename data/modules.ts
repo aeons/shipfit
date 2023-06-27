@@ -621,7 +621,7 @@ export var Modules = [
   },
   {
     "typeID": 1351,
-    "typeName": "Basic Reactor Control Unit",
+    "typeName": "'Basic' Reactor Control Unit",
     "effectID": 11
   },
   {
@@ -1456,7 +1456,7 @@ export var Modules = [
   },
   {
     "typeID": 3469,
-    "typeName": "Basic Co-Processor",
+    "typeName": "'Basic' Co-Processor",
     "effectID": 11
   },
   {
@@ -7796,7 +7796,7 @@ export var Modules = [
   },
   {
     "typeID": 14527,
-    "typeName": "Tobias's Modified Torpedo Launcher",
+    "typeName": "Tobias' Modified Torpedo Launcher",
     "effectID": 12
   },
   {
@@ -8101,7 +8101,7 @@ export var Modules = [
   },
   {
     "typeID": 14682,
-    "typeName": "Vepas's Modified Torpedo Launcher",
+    "typeName": "Vepas' Modified Torpedo Launcher",
     "effectID": 12
   },
   {
@@ -8301,7 +8301,7 @@ export var Modules = [
   },
   {
     "typeID": 14750,
-    "typeName": "Vepas's Modified Kinetic Shield Hardener",
+    "typeName": "Vepas' Modified Kinetic Shield Hardener",
     "effectID": 13
   },
   {
@@ -8321,7 +8321,7 @@ export var Modules = [
   },
   {
     "typeID": 14754,
-    "typeName": "Vepas's Modified EM Shield Hardener",
+    "typeName": "Vepas' Modified EM Shield Hardener",
     "effectID": 13
   },
   {
@@ -8341,7 +8341,7 @@ export var Modules = [
   },
   {
     "typeID": 14758,
-    "typeName": "Vepas's Modified Explosive Shield Hardener",
+    "typeName": "Vepas' Modified Explosive Shield Hardener",
     "effectID": 13
   },
   {
@@ -8361,7 +8361,7 @@ export var Modules = [
   },
   {
     "typeID": 14762,
-    "typeName": "Vepas's Modified Thermal Shield Hardener",
+    "typeName": "Vepas' Modified Thermal Shield Hardener",
     "effectID": 13
   },
   {
@@ -8381,7 +8381,7 @@ export var Modules = [
   },
   {
     "typeID": 14766,
-    "typeName": "Vepas's Modified Multispectrum Shield Hardener",
+    "typeName": "Vepas' Modified Multispectrum Shield Hardener",
     "effectID": 13
   },
   {
@@ -14301,7 +14301,7 @@ export var Modules = [
   },
   {
     "typeID": 21498,
-    "typeName": "Synthetic Hull Conversion Inertia Stabilizers",
+    "typeName": "Synthetic Hull Conversion Inertial Stabilizers",
     "effectID": 11
   },
   {
@@ -15186,12 +15186,12 @@ export var Modules = [
   },
   {
     "typeID": 25540,
-    "typeName": "'Crop' Gas Cloud Scoop ",
+    "typeName": "'Crop' Gas Cloud Scoop",
     "effectID": 12
   },
   {
     "typeID": 25542,
-    "typeName": "'Plow' Gas Cloud Scoop ",
+    "typeName": "'Plow' Gas Cloud Scoop",
     "effectID": 12
   },
   {
@@ -16546,7 +16546,7 @@ export var Modules = [
   },
   {
     "typeID": 28788,
-    "typeName": "Syndicate Gas Cloud Scoop ",
+    "typeName": "Syndicate Gas Cloud Scoop",
     "effectID": 12
   },
   {
@@ -21141,7 +21141,7 @@ export var Modules = [
   },
   {
     "typeID": 37475,
-    "typeName": " Medium Tech I Large Ship Research II",
+    "typeName": "Medium Tech I Large Ship Research II",
     "effectID": 2663
   },
   {
@@ -24866,7 +24866,7 @@ export var Modules = [
   },
   {
     "typeID": 58971,
-    "typeName": "Restrained Interdiction Nullifier",
+    "typeName": "Enduring Interdiction Nullifier",
     "effectID": 12
   },
   {
@@ -24886,7 +24886,7 @@ export var Modules = [
   },
   {
     "typeID": 60315,
-    "typeName": "Ore Gas Cloud Harvester ",
+    "typeName": "ORE Gas Cloud Harvester",
     "effectID": 12
   },
   {
@@ -24897,6 +24897,131 @@ export var Modules = [
   {
     "typeID": 60483,
     "typeName": "Mutated Fighter Support Unit",
+    "effectID": 12
+  },
+  {
+    "typeID": 61666,
+    "typeName": "Pew",
+    "effectID": 12
+  },
+  {
+    "typeID": 62589,
+    "typeName": "QA Compressor",
+    "effectID": 12
+  },
+  {
+    "typeID": 62590,
+    "typeName": "Medium Industrial Core I",
+    "effectID": 12
+  },
+  {
+    "typeID": 62591,
+    "typeName": "Medium Industrial Core II",
+    "effectID": 12
+  },
+  {
+    "typeID": 62622,
+    "typeName": "Medium Asteroid Ore Compressor I",
+    "effectID": 12
+  },
+  {
+    "typeID": 62624,
+    "typeName": "Medium Gas Compressor I",
+    "effectID": 12
+  },
+  {
+    "typeID": 62625,
+    "typeName": "Large Asteroid Ore Compressor I",
+    "effectID": 12
+  },
+  {
+    "typeID": 62626,
+    "typeName": "Large Gas Compressor I",
+    "effectID": 12
+  },
+  {
+    "typeID": 62628,
+    "typeName": "Large Ice Compressor I",
+    "effectID": 12
+  },
+  {
+    "typeID": 62630,
+    "typeName": "Large Mercoxit Compressor I",
+    "effectID": 12
+  },
+  {
+    "typeID": 62631,
+    "typeName": "Large Moon Ore Compressor I",
+    "effectID": 12
+  },
+  {
+    "typeID": 62632,
+    "typeName": "Capital Asteroid Ore Compressor I",
+    "effectID": 12
+  },
+  {
+    "typeID": 62633,
+    "typeName": "Capital Ice Compressor I",
+    "effectID": 12
+  },
+  {
+    "typeID": 62634,
+    "typeName": "Capital Gas Compressor I",
+    "effectID": 12
+  },
+  {
+    "typeID": 62635,
+    "typeName": "Capital Mercoxit Compressor I",
+    "effectID": 12
+  },
+  {
+    "typeID": 62636,
+    "typeName": "Capital Moon Ore Compressor I",
+    "effectID": 12
+  },
+  {
+    "typeID": 63140,
+    "typeName": "Industrial Jump Portal Generator I",
+    "effectID": 12
+  },
+  {
+    "typeID": 72879,
+    "typeName": "QA Analyzer",
+    "effectID": 13
+  },
+  {
+    "typeID": 74255,
+    "typeName": "QA Survey Scanner",
+    "effectID": 13
+  },
+  {
+    "typeID": 74256,
+    "typeName": "QA Miner",
+    "effectID": 12
+  },
+  {
+    "typeID": 74448,
+    "typeName": "QA Salvager",
+    "effectID": 12
+  },
+  {
+    "typeID": 77398,
+    "typeName": "‘Atgeir’ Explosive Disruptive Lance ",
+    "effectID": 12
+  },
+  {
+    "typeID": 77399,
+    "typeName": "'Azmaru' Electromagnetic Disruptive Lance",
+    "effectID": 12
+  },
+  {
+    "typeID": 77400,
+    "typeName": "‘Steel Yari’ Kinetic Disruptive Lance",
+    "effectID": 12
+  },
+  {
+    "typeID": 77401,
+    "typeName": "‘Sarissa’ Thermal Disruptive Lance",
     "effectID": 12
   }
 ]

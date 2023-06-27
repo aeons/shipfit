@@ -4504,6 +4504,10 @@ export var Charges = [
     "typeName": "Yoiul Spiral Firework"
   },
   {
+    "typeID": 60939,
+    "typeName": "Paradoxical Nebula Firework"
+  },
+  {
     "typeID": 61197,
     "typeName": "Ubiquitous Moon Mining Crystal Type B I"
   },
@@ -4582,5 +4586,33 @@ export var Charges = [
   {
     "typeID": 61216,
     "typeName": "Exceptional Moon Mining Crystal Type C II"
+  },
+  {
+    "typeID": 63165,
+    "typeName": "Capsuleer Starburst Firework"
+  },
+  {
+    "typeID": 63195,
+    "typeName": "Standup Flak Round I"
+  },
+  {
+    "typeID": 71755,
+    "typeName": "Union of Eight Paths Firework"
+  },
+  {
+    "typeID": 73408,
+    "typeName": "Scarlet Embrace Firework"
+  },
+  {
+    "typeID": 74385,
+    "typeName": "Reserved for future firework use (DO NOT TRANSLATE)"
+  },
+  {
+    "typeID": 74386,
+    "typeName": "Yoiul's Ascent Firework"
+  },
+  {
+    "typeID": 76963,
+    "typeName": " Infinite Celebrations Firework"
   }
 ]
