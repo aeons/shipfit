@@ -4,13 +4,9 @@ import {generateFittingWheelSvg} from "./fitting-wheel";
 import {elem} from "./html-builder";
 import {CopyIcon, createIcon} from "./icons";
 
-export interface FittingElement extends HTMLElement {
+export interface FittingElement extends HTMLElement {}
 
-}
-
-interface FittingAttributes {
-
-}
+interface FittingAttributes {}
 
 class Fitting extends HTMLElement implements FittingElement {
     private root: ShadowRoot;
@@ -107,8 +103,7 @@ class Fitting extends HTMLElement implements FittingElement {
         .icon:active {
             transform: translateY(4px);
         }
-        </style>
-        `, "text/html").documentElement;
+        </style>`, "text/html").documentElement;
     }
 }
 

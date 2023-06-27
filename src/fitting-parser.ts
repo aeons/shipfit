@@ -61,14 +61,14 @@ export class FittingParser {
 
     parse(eftFit: EftFit): Fit {
 
-        const ship = Ships.find((ship) => ship.typeName === eftFit.shipType);
+        const ship = Ships[eftFit.shipType];
         if (!ship) {
             throw `Ship with name "${eftFit.shipType}" not found`;
         }
 
         const fit: Fit = {
             fitName: eftFit.fitName,
-            shipType: item(ship.typeName, ship.typeID),
+            shipType: item(eftFit.shipType, ship[0]),
             highSlots: [],
             midSlots: [],
             lowSlots: [],
@@ -94,7 +94,7 @@ export class FittingParser {
                 return;
             }
 
-            const module = Modules.find((module) => module.typeName === eftSlot.module);
+            const module = Modules[eftSlot.module];
             if (!module) {
                 // Presume it's a cargo item for now and that all future items are also cargo
                 cargo = true;
@@ -102,17 +102,17 @@ export class FittingParser {
                 return;
             }
 
-            const charge = Charges.find((charge) => charge.typeName === eftSlot.charge);
-            const slotCharge = charge ? {name: charge.typeName, type: charge.typeID} : {name: "", type: -1};
+            const chargeTypeId = Charges[eftSlot.charge]
+            const slotCharge = chargeTypeId ? {name: eftSlot.charge, type: chargeTypeId} : {name: "", type: -1};
 
             const slot = {
                 filled: true,
-                charged: !!charge,
-                module: {name: module.typeName, type: module.typeID},
+                charged: !!chargeTypeId,
+                module: {name: eftSlot.module, type: module[0]},
                 charge: slotCharge
             } as FilledSlot;
 
-            switch(module.effectID as Slots) {
+            switch(module[1] as Slots) {
                 case Slots.HighSlot:
                     fit.highSlots.push(slot);
                     break;
@@ -136,27 +136,27 @@ export class FittingParser {
             }
         });
 
-        if (!t3cs.includes(ship.typeName)) {
-            fit.highSlots = fit.highSlots.slice(0, ship.highs);
-            fit.midSlots = fit.midSlots.slice(0, ship.mids);
-            fit.lowSlots = fit.lowSlots.slice(0, ship.lows);
+        if (!t3cs.includes(eftFit.shipType)) {
+            fit.highSlots = fit.highSlots.slice(0, ship[4]);
+            fit.midSlots = fit.midSlots.slice(0, ship[3]);
+            fit.lowSlots = fit.lowSlots.slice(0, ship[2]);
             fit.subsystemSlots = fit.subsystemSlots.slice(0, 4);
         }
 
-        fit.rigSlots = fit.rigSlots.slice(0, ship.rigs);
-        while (fit.serviceSlots.length < ship.services) {
+        fit.rigSlots = fit.rigSlots.slice(0, ship[5]);
+        while (fit.serviceSlots.length < ship[6]) {
             fit.serviceSlots.push({filled: false, charged: false})
         }
-        while (fit.highSlots.length < ship.highs) {
+        while (fit.highSlots.length < ship[4]) {
             fit.highSlots.push({filled: false, charged: false})
         }
-        while (fit.midSlots.length < ship.mids) {
+        while (fit.midSlots.length < ship[3]) {
             fit.midSlots.push({filled: false, charged: false})
         }
-        while (fit.lowSlots.length < ship.lows) {
+        while (fit.lowSlots.length < ship[2]) {
             fit.lowSlots.push({filled: false, charged: false})
         }
-        while (fit.rigSlots.length < ship.rigs) {
+        while (fit.rigSlots.length < ship[5]) {
             fit.rigSlots.push({filled: false, charged: false})
         }
 
