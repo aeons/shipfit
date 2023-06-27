@@ -5,6 +5,8 @@
 ## Overview
 A web component to render a visual representation of an EFT format fit for Eve Online.
 
+Forked from https://github.com/souptheloop/shipfit
+
 ## Examples
 * [Examples](https://souptheloop.github.io/shipfit/)
 * [JSFiddle Live Example](https://jsfiddle.net/souptheloop/k76u48ab/9/)
@@ -12,7 +14,7 @@ A web component to render a visual representation of an EFT format fit for Eve O
 ## Setup
 Using the published bundle from unpkg
 ```html
-<script src="https://unpkg.com/shipfit@1.1.0/dist/index.umd.min.js"></script>
+<script src="https://unpkg.com/minmatar-shipfit@1.2.0/dist/index.umd.min.js"></script>
 <ship-fit>
 [Revelation, Revelation]
 Capital I-a Enduring Armor Repairer
@@ -49,6 +51,7 @@ The component supports the following HTML attributes
 | ---------------- | --------- | -----------
 | hide-copy        | not set   | Hides the copy fitting button when set
 | hide-charges     | not set   | Hides the charges inner ring
+| remove-class     | undefined | Class to remove once the fitting ring is loaded
 
 ## Caveats
 * If you use this in an environment where the fitting input is untrusted, 

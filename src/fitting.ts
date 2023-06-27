@@ -60,6 +60,11 @@ class Fitting extends HTMLElement implements FittingElement {
                 generateFittingWheelSvg(fit, !this.hasAttribute("hide-charges")),
             ).build()
         )
+
+        const classToRemove = this.getAttribute("remove-class");
+        if (classToRemove) {
+            this.classList.remove(classToRemove);
+        }
     }
 
     getButtonTray() {

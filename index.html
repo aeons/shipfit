@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shipfit</title>
 
-    <script src="/dist/index.umd.min.js"></script>
+    <script src="/dist/index.umd.min.js" defer></script>
+    <style>
+        .d-none {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <ship-fit>
+    <ship-fit class="d-none some-other-class" remove-class="d-none">
         [Revelation, Revelation]
         Capital I-a Enduring Armor Repairer
         Corpum A-Type Multispectrum Energized Membrane
